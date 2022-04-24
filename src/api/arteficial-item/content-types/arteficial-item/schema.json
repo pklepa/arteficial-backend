@@ -4,7 +4,8 @@
   "info": {
     "singularName": "arteficial-item",
     "pluralName": "arteficial-items",
-    "displayName": "Arteficial_Item"
+    "displayName": "Arteficial_Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,18 +13,30 @@
   "pluginOptions": {},
   "attributes": {
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "Description": {
       "type": "richtext",
+      "required": true
+    },
+    "Row": {
+      "type": "integer",
+      "min": 1,
+      "max": 16,
+      "required": true
+    },
+    "Column": {
+      "type": "integer",
+      "max": 16,
+      "min": 1,
       "required": true
     }
   }
