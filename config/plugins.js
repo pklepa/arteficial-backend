@@ -9,7 +9,7 @@ module.exports = ({ env }) => ({
         api_secret: env("CLOUDINARY_SECRET"),
       },
       actionOptions: {
-        upload: { folder: env("CLOUDINARY_FOLDER") },
+        upload: {},
         delete: {},
       },
     },
