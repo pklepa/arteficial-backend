@@ -16,12 +16,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "Description": {
       "type": "richtext",
@@ -31,13 +26,13 @@
       "type": "integer",
       "min": 1,
       "max": 16,
-      "required": true
+      "required": false
     },
     "Column": {
       "type": "integer",
       "max": 16,
       "min": 1,
-      "required": true
+      "required": false
     }
   }
 }
